@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="City Weather Info">
+        <lightning-layout>
+            <lightning-layout-item size="6" medium-device-size="4" padding="around-small" var1={cityName} var2={countryCod} onchange={handleChange}>
+                <div class="slds-form-element">
+                    <span>City Name: {getCityName}</span>
+                </div>
+                <!-- <div class="slds-form-element">
+                    <span>Weather: {getWeather}</span>
+                </div> -->
+                <div class="slds-form-element">
+                    <span>Address:  {getCityName}, {getStateCod},</span>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
